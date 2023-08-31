@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Data</title>
+    <link rel="stylesheet" href="../static/css/style.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="newStudents">
+        <div class="head"><h1>Update Student Details</h1></div>
+
+        <form action="/update/<%= data._id%>" method="post" class="form">
+    
+        <label for="name" class="inputMain inp">Name :</label>
+        <input type="text" class="input inputMain" name="name" value="<%= data.name %>" id="nameInp" placeholder="Enter your name" required><br>
+    
+        <label for="age" class="inputMain inp">Age :</label>
+        <input type="text" class="input inputMain" name="age" value="<%= data.age %>" id="ageInp" placeholder="Enter your age" required><br>
+    
+        <label for="classs" class="inputMain inp">Class :</label>
+        <input type="text" class="input inputMain" name="classs" value="<%= data.classs %>" id="classInp" placeholder="Enter your class" required><br>
+    
+        <label for="rollNo" class="inputMain inp">Roll No :</label>
+        <input type="text" class="input inputMain" name="rollNo" value="<%= data.rollNo %>" id="rollNo" placeholder="Enter your roll no" required><br>
+    
+        <label for="address" class="inputMain inp">Address :</label>
+        <input type="text" class="input inputMain" name="address" value="<%= data.address %>" id="addressInp" placeholder="Enter your address" required><br>
+    
+        <label for="pincode" class="inputMain inp">Pin Code :</label>
+        <input type="text" class="input inputMain" name="pinCode" value="<%= data.pinCode %>" id="pincodeInp" placeholder="Enter your pin code" required><br>
+        <br><button type="submit" class="btn">Update</button>
+    </form>
+    <a href="/back"><button class="btn2">Back to Home</button></a>
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/3b6f85da8b.js" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,170 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Ubuntu', sans-serif;
+    box-sizing: border-box;
+}
+.newStudents{
+    text-align: center;
+    min-width: 462px
+
+/* display: flex;
+flex-direction: column;
+align-items: center; */
+}
+.head h1{
+    display: inline-block;
+    margin: 2.5rem 0rem;
+    padding: 0.5rem 6rem;
+    background-color: #7fffd4b5;
+    /* border: 2px solid red; */
+}
+.form{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.inputMain{
+    width: 10rem;
+    height: 2rem;
+    font-size: 1.1rem;
+}
+.inp{
+    margin: 0.5rem 0rem;
+
+}
+.input{
+    width: 30rem;
+    border: 1px solid #7e7eb3;
+    border-radius: 5px;
+    outline: none;
+    padding: 0px 6px;
+}
+input::placeholder{
+    padding: 0px 4px;
+}
+.btn{
+    height: 2.3rem;
+    width: 8rem;
+    background-color: #1d1daff7;
+    color: white;
+    border-radius: 6px;
+    margin: 0.5rem 0rem 0rem 10rem;
+    cursor: pointer;
+    border: none;
+    display: inline;
+}
+.btn2{
+    height: 2.3rem;
+    width: 8rem;
+    background-color: red;
+    color: white;
+    border-radius: 6px;
+    margin: 0.5rem 0rem 0rem 4rem;
+    cursor: pointer;
+    border: none;
+    position: relative;
+    top: -2.8rem;
+    left: -17rem;
+}
+.studentList{
+    text-align: center;
+    position: relative;
+    top: 2rem;
+    min-width: 460px
+}
+.head2 h1{
+    display: inline-block;
+    margin: 2.5rem 0rem;
+    padding: 0.5rem 7rem;
+    background-color: #f9c1b0;
+    /* border: 2px solid red; */
+    text-align: center;
+}
+td,th{
+    text-align: center;
+    width: 100vw;
+    padding: 1rem 0rem;
+    border: 1px solid black;
+    font-size: 1.2rem;
+}
+table{
+        border-collapse: collapse;
+    
+}
+.thead{
+    padding: 1rem 0rem;
+    /* width: 10rem; */
+    border-bottom: 3px solid rgba(0, 0, 0, 0.872);
+
+}
+@media only screen and (max-width:475px){
+    input[type=text]{
+        width: 17rem;
+        margin: 1rem 0rem;
+    }
+    .btn2 {
+        left: 6rem;
+    }
+}
+@media only screen and (min-width:476px) and (max-width:1024px){
+    .form{
+        display: block;
+    }
+    input[type=text]{
+        width: 32rem;
+        margin: 1rem 0rem;
+    }
+    .inp {
+        padding: 0rem 1rem;
+    }
+    .btn {
+         margin: 0.5rem 0rem 0rem 0rem;
+    }
+}
+@media only screen and (min-width:1025px) and (max-width:1120px){
+    input[type=text]{
+        width: 22rem
+    }
+}
+@media only screen and (min-width:1121px) and (max-width:1250px){
+    input[type=text]{
+        width: 25rem
+    }
+
+}
+@media only screen and (min-width:1251px) and (max-width:1250px){
+    input[type=text]{
+        width: 30rem
+    }
+
+}
+@media only screen and (min-width:1440px){
+    input[type=text]{
+        width: 34rem
+    }
+
+}
+
+/* @media only screen and (max-width:460px){
+    .input {
+        width: 13rem;
+    }
+}
+@media only screen and(min-width:461px)and (max-width:633px){
+    .input {
+        width: 18rem;
+    }
+    .btn {
+        margin: 0.5rem 0rem 0rem 16rem;
+    }
+}
+@media only screen and (min-width:767px) and (max-width:840px){
+    .input {
+        min-width: 11rem;
+    }
+    .btn {
+        margin: 0.5rem 0rem 0rem 0.8rem;
+    }
+} */
